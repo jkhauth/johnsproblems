@@ -1,6 +1,6 @@
 const express = require("express");
 const logger = require('morgan');
-// const routes = require("./routes");
+const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(express.static('client/public'));
 
 // ACCESS ROUTES FROM ROUTES DIRECTORY/FOLDER
-// app.use(routes);
+app.use(routes);
 
 // START API SERVER
 app.listen(PORT, function () {

@@ -1,0 +1,22 @@
+
+
+/* MAIN VARIABLES */
+.mainStyle{
+    background-color: #b0e5f7;
+}
+
+.mainContainer{
+    border-top: 2px solid black;
+}
+
+/* INDIVIDUAL COMPONENT STYLE */
+
+/* ABOUT ME SECTION */
+
+.aboutTop{
+   /* border-right: 1px solid black;
+   border-left: 1px solid black; */
+   max-width: 380px;
+}
+
+/* DAILY PROBLEM STYLE */

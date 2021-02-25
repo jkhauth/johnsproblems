@@ -1,13 +1,28 @@
+import React from 'react'
+import Navigation from './components/navbar/NavBar'
+import AboutSite from './components/about-site/About-Site'
+import Problems from './components/daily-problem/DailyProblem'
+import {HashRouter as Router} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './components/styles/main.css'
+
+
+
+
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-       <h1>HELLO WORLD</h1>
-       <h2>updating</h2>
-       <h3>still updating</h3>
-      </header>
+    <>
+    <Router>
+      <Navigation />     
+    </Router>
+    <div className="d-flex flex-row flex-wrap mainContainer">
+    <AboutSite />
+    <Problems />
     </div>
+    </>
   );
+
 }
 
 export default App;
